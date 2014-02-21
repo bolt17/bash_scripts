@@ -24,6 +24,5 @@ function install_salt()
   rpm -qa | grep epel-release-6-8
   if [ $? -ne 0 ]; then
     rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-    yum -y install salt-minion
   fi
 }
